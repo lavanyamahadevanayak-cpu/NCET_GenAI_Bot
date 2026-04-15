@@ -9,7 +9,7 @@ product = st.text_input("Product")
 audience = st.text_input("Audience")
 if st.button("Generate Content"):
   prompt = f"Write marketing content for {product} targeting {audience}."
-  response = client.chat.chat.completions.create{
+  response = client.chat.chat.completions.create(
   model ="llama-3.3-70b-versatile",
   messages=[{"role": "user", "content": prompt}]
   )
