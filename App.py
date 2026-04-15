@@ -14,7 +14,7 @@ if st.button("Generate Content"):
   messages=[{"role": "user", "content": prompt}]
   )
   st.session_stste.text = response.choices[0].message.content
-  text =response.choice[0.message.content
+  text =response.choice[0].message.content
   st.write(text)
   if "text" in st.session_state:
       content = st.text_area("Generated Content", st.ession_state.text, height=300)
