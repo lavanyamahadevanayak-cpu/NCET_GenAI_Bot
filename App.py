@@ -13,7 +13,7 @@ if st.button("Generate Content"):
   model ="llama-3.3-70b-versatile",
   messages=[{"role": "user", "content": prompt}]
   )
-  st.session_stste.text = response.choices[0.message.content
+  st.session_stste.text = response.choices[0].message.content
   text =response.choice[0.message.content
   st.write(text)
   if "text" in st.session_state:
