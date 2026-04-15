@@ -25,7 +25,7 @@ if st.button("Generate Content"):
         mime="text/plain"
       )
       else:
-          pt.info("Generate content first")
+          st.info("Generate content first")
 
 
   
